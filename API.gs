@@ -29,7 +29,7 @@ function doGet(e) {
         tmp[raw_key[0][j]] = raw_value[i][j];
       }
       if (tmp['valid_flg'] == 1) {
-        if (tmp['creator_name_en'] == tag || tmp['country_name_en'] == tag || tmp['area_name_en'] == tag || tmp['spot_name_en'] == tag || tmp['sea_name_en'] == tag || tmp['other_en'] == tag) {
+        if (tmp['channel_title'] == tag || tmp['country_name_en'] == tag || tmp['area_name_en'] == tag || tmp['island_name_en'] == tag || tmp['sea_name_en'] == tag || tmp['other_en'] == tag) {
           data.push(tmp);
         }
       }
