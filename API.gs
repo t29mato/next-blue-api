@@ -5,7 +5,6 @@ function doGet(e) {
   var last_row = sheet.getLastRow();
   var range_key = sheet.getRange(1, 1, 1, last_column);
   var range_value = sheet.getRange(2, 1, last_row, last_column);
-  range_value.sort([{column: 9, ascending: false}]); // 公開日順に並び替え
   var raw_key = range_key.getValues();
   var raw_value = range_value.getValues();
   
